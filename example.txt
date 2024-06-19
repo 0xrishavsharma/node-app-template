@@ -1,1 +1,1 @@
-This is an example file
+This is an example file. Adding a new line to it.

@@ -1,5 +1,5 @@
 function example(name: string) {
-    return `Hello ${name}`;
+  return `Hello ${name}`;
 }
 
 example("Beau");

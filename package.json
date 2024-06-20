@@ -1,12 +1,17 @@
 {
-    "name": "auth-service",
-    "version": "1.0.0",
-    "description": "An auth mircoservice for user management",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "node src/server.js"
-    },
-    "author": "Rishav Sharma <rishavtosharma@gmail.com>",
-    "license": "ISC"
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "An auth microservice for user management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "author": "Rishav Sharma <rishavtosharma@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }

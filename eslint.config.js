@@ -19,6 +19,7 @@ export default tseslint.config(
         ignores: ["node_modules", "dist"],
         rules: {
             "no-console": "error",
+            "dot-notation": "error",
         },
     },
 );

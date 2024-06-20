@@ -1,33 +1,33 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "An auth microservice for user management",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/server.js",
-    "format:check": "prettier . --check",
-    "format:fix": "prettier . --write",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepare": "husky"
-  },
-  "author": "Rishav Sharma <rishavtosharma@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@eslint/js": "^9.5.0",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.14.6",
-    "eslint": "^9.5.0",
-    "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.0.11",
-    "pinst": "^3.0.0",
-    "prettier": "3.3.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.1"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "An auth microservice for user management",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node src/server.js",
+        "format:check": "prettier . --check",
+        "format:fix": "prettier . --write",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prepare": "husky"
+    },
+    "author": "Rishav Sharma <rishavtosharma@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^19.3.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "@eslint/js": "^9.5.0",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^20.14.6",
+        "eslint": "^9.5.0",
+        "eslint-config-prettier": "^9.1.0",
+        "husky": "^9.0.11",
+        "pinst": "^3.0.0",
+        "prettier": "3.3.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.13.1"
+    }
 }

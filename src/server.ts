@@ -13,7 +13,7 @@ function example(name: string, age: number) {
     const somePerson = person[0].name;
 
     // console.log(`Hello ${name} and age is ${age}`);
-    return `Hello ${name} and age is ${age}, but some person is ${somePerson}`;
+    return `Hello ${name} and age is ${age}, but some person is ${somePerson} still`;
 }
 
 example("Beau", 24);

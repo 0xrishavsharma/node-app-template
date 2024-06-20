@@ -27,6 +27,7 @@
         "@eslint/js": "^9.5.0",
         "@types/eslint__js": "^8.42.3",
         "@types/node": "^20.14.6",
+        "@types/winston": "^2.4.4",
         "eslint": "^9.5.0",
         "eslint-config-prettier": "^9.1.0",
         "husky": "^9.0.11",
@@ -42,6 +43,7 @@
         "dotenv": "^16.4.5",
         "envalid": "^8.0.0",
         "express": "^4.19.2",
-        "tsx": "^4.15.6"
+        "tsx": "^4.15.6",
+        "winston": "^3.13.0"
     }
 }

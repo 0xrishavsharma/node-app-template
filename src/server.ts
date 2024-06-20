@@ -1,19 +1,21 @@
-const person = [
-    {
-        name: "Beau",
-        age: 24,
-    },
-    {
-        name: "John",
-        age: 30,
-    },
-];
+// This file will be the file where the server logic will exist. Initialization of the server will be done in the app.ts file.
 
-function example(name: string, age: number) {
-    const somePerson = person[0].name;
+import app from "./app.js";
+import env from "./config/env.js";
 
-    // console.log(`Hello ${name} and age is ${age}`);
-    return `Hello ${name} and age is ${age}, but some person is ${somePerson} still`;
-}
+const startServer = () => {
+    const PORT = env.PORT;
 
-example("Beau", 24);
+    try {
+        app.listen(PORT, () => {
+            // eslint-disable-next-line no-console
+            console.log(`Server is running on http://localhost:${PORT}`);
+        });
+    } catch (err) {
+        // eslint-disable-next-line no-console
+        console.error("Error detected", err);
+        process.exit(1);
+    }
+};
+
+startServer();

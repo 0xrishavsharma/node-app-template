@@ -13,6 +13,12 @@
         "lint:fix": "eslint . --fix",
         "prepare": "husky"
     },
+    "lint-staged": {
+        "*.ts": [
+            "yarn lint:fix",
+            "yarn format:fix"
+        ]
+    },
     "author": "Rishav Sharma <rishavtosharma@gmail.com>",
     "license": "ISC",
     "devDependencies": {
@@ -24,6 +30,7 @@
         "eslint": "^9.5.0",
         "eslint-config-prettier": "^9.1.0",
         "husky": "^9.0.11",
+        "lint-staged": "^15.2.7",
         "pinst": "^3.0.0",
         "prettier": "3.3.2",
         "ts-node": "^10.9.2",

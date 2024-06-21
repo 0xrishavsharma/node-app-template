@@ -5,7 +5,6 @@ import "@typescript-eslint/parser";
 
 export default tseslint.config({
     languageOptions: {
-        // parser: tseslint.parser,
         parserOptions: {
             project: true,
             tsconfigRootDir: import.meta.dirname,

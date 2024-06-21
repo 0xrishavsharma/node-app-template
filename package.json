@@ -26,6 +26,7 @@
         "@commitlint/config-conventional": "^19.2.2",
         "@eslint/js": "^9.5.0",
         "@types/eslint__js": "^8.42.3",
+        "@types/http-errors": "^2.0.4",
         "@types/node": "^20.14.6",
         "@types/winston": "^2.4.4",
         "eslint": "^9.5.0",
@@ -43,6 +44,7 @@
         "dotenv": "^16.4.5",
         "envalid": "^8.0.0",
         "express": "^4.19.2",
+        "http-errors": "^2.0.0",
         "tsx": "^4.15.6",
         "winston": "^3.13.0"
     }

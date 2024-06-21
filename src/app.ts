@@ -8,8 +8,16 @@ import { HttpError } from "http-errors";
 
 const app = express();
 
-app.get("/", (req, res) => {
-    res.send("Hello World");
+/**
+ * If you make any route handler async, then our global error handler middleware will not be able to catch the error thrown from the async route handler. To solve this issue, instead of using "throw err" we need to make use of the next() function and pass the error to it as a parameter "next(err)", so that the error is passed to the global error handler middleware by the next() function.
+ */
+
+app.get("/", async (req, res) => {
+    /**
+     * Whenever we throw an error from a route handler, it will be caught by the global error
+     * handler middleware.
+     */
+    res.send("Hey, welcome to Feast Finder's Auth Service!");
 });
 
 /**

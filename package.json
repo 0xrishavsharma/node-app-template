@@ -45,6 +45,7 @@
         "envalid": "^8.0.0",
         "express": "^4.19.2",
         "http-errors": "^2.0.0",
+        "moment-timezone": "^0.5.45",
         "tsx": "^4.15.6",
         "winston": "^3.13.0"
     }

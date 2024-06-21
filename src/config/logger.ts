@@ -1,5 +1,6 @@
 import winston from "winston";
 import env from "./env";
+import moment from "moment-timezone";
 
 const logger = winston.createLogger({
     level: "info",
@@ -11,7 +12,12 @@ const logger = winston.createLogger({
             level: "info",
             filename: "logs/combined.log",
             format: winston.format.combine(
-                winston.format.timestamp(),
+                winston.format.timestamp({
+                    format: () =>
+                        moment()
+                            .tz("ASIA/KOLKATA")
+                            .format("hh:mm:ss A, DD-MMM-YYYY z"),
+                }),
                 winston.format.json(),
             ),
             silent: env.NODE_ENV === "test",
@@ -21,7 +27,12 @@ const logger = winston.createLogger({
             level: "error",
             filename: "logs/error.log",
             format: winston.format.combine(
-                winston.format.timestamp(),
+                winston.format.timestamp({
+                    format: () =>
+                        moment()
+                            .tz("ASIA/KOLKATA")
+                            .format("hh:mm:ss A, DD-MMM-YYYY z"),
+                }),
                 winston.format.json(),
             ),
             silent: env.NODE_ENV === "test",
@@ -30,7 +41,12 @@ const logger = winston.createLogger({
         new winston.transports.Console({
             level: "info",
             format: winston.format.combine(
-                winston.format.timestamp(),
+                winston.format.timestamp({
+                    format: () =>
+                        moment()
+                            .tz("ASIA/KOLKATA")
+                            .format("hh:mm:ss A, DD-MMM-YYYY z"),
+                }),
                 winston.format.colorize(),
                 winston.format.simple(),
             ),

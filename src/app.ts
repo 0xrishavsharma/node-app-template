@@ -3,7 +3,7 @@
  * The actual server logic is contained within the server.ts file.
  */
 import express, { NextFunction, Request, Response } from "express";
-import logger from "./config/logger.js";
+import logger from "./config/logger";
 import { HttpError } from "http-errors";
 
 const app = express();
@@ -17,7 +17,7 @@ app.get("/", async (req, res) => {
      * Whenever we throw an error from a route handler, it will be caught by the global error
      * handler middleware.
      */
-    res.send("Hey, welcome to Feast Finder's Auth Service!");
+    res.status(200).send("Hey, welcome to Feast Finder's Auth Service!");
 });
 
 /**

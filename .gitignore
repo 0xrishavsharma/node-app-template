@@ -135,3 +135,6 @@ secrets.txt
 
 # Cache 
 cache/
+
+# Example Readme
+README_NODE_TEMPLATE.txt

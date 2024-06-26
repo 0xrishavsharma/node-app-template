@@ -11,9 +11,9 @@ These instructions will get your copy of the project up and running on your loca
 Before you begin, ensure you have met the following requirements:
 
 -   **Node.js**: Version 18.19.0 or later. Node.js is the runtime environment required to run JavaScript code outside of a browser.
--   **yarn**: Version 1.22.0 or later. npm is the package manager for JavaScript, used to install dependencies.
+-   **yarn**: Version 1.22.0 or later. yarn is the package manager for JavaScript, used to install and manage dependencies.
 
-To check if you have Node.js and npm installed, run the following commands in your terminal:
+To check if you have Node.js and yarn installed, run the following commands in your terminal:
 
 ```bash
 node --version
@@ -32,7 +32,7 @@ To install the project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone
+git clone <repository-url> <folder_path_you_want_to_install_it_in>
 ```
 
 2. Navigate to the project directory:
@@ -52,7 +52,7 @@ yarn install
 To start the project, run the following command:
 
 ```bash
-yarn start
+yarn dev
 ```
 
 The project will start on `http://localhost:3000`.
